@@ -61,4 +61,7 @@ Rails.application.configure do
 
   # devise config
   config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
+
+  # active storage to store file locally
+  config.active_storage.service = :local
 end
