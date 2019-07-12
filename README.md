@@ -1,24 +1,46 @@
-# README
+# Introduction
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This project can be done thanks to [Mackenzie Child](https://www.youtube.com/watch?v=abcnfFS_DS8) YouTube tutorial. There are some slight change in this project from the YouTube tutorial. This project use Ruby 2.6.3, Rails 5.2.3 and using active storage as image attachment instead of paperclip. 
 
-Things you may want to cover:
+## Run this project locally
 
-* Ruby version
+_This tutorial assumes you have Ruby 2.6.3 installed. If not, please [install it using RVM](https://rvm.io)._
 
-* System dependencies
+1. Clone this repository to your local machine.
 
-* Configuration
+```bash
+git clone git@github.com:helmihidzir/pin_board.git
+```
 
-* Database creation
+2. Change into the `pin_board` directory.
 
-* Database initialization
+```bash
+cd pin_board
+```
 
-* How to run the test suite
+3. Install the project dependencies using bundler.
 
-* Services (job queues, cache servers, search engines, etc.)
+```bash
+gem install bundler
+bundle install
+```
 
-* Deployment instructions
+4. Create the SQLite database.
 
-* ...
+```bash
+rails db:create
+```
+
+5. Run the database migrations.
+
+```bash
+rails db:migrate
+```
+
+6. Start the Rails server.
+
+```bash
+rails s
+```
+
+7. Lastly, navigate to <http://0.0.0.0:3000> to play around with the project.
